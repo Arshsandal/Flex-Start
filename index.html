@@ -146,7 +146,7 @@
                   <div class="counter-box">
                      <i class="fa-solid fa-face-smile text-primary"></i>
                      <div class="counter-content">
-                        <span>232</span>
+                        <span id="counter-1"></span>
                         <p>Happy Clients</p>
                      </div>
                   </div>
@@ -155,7 +155,7 @@
                   <div class="counter-box">
                      <i class="fa-solid fa-book text-warning"></i>
                      <div class="counter-content">
-                        <span>521</span>
+                        <span id="counter-2"></span>
                         <p>Projects</p>
                      </div>
                   </div>
@@ -164,7 +164,7 @@
                   <div class="counter-box">
                      <i class="fa-solid fa-headset text-success"></i>
                      <div class="counter-content">
-                        <span>1463</span>
+                        <span id="counter-3"></span>
                         <p>Hours Of Support</p>
                      </div>
                   </div>
@@ -173,7 +173,7 @@
                   <div class="counter-box">
                      <i class="fa-solid fa-users text-danger"></i>
                      <div class="counter-content">
-                        <span>15</span>
+                        <span id="counter-4"></span>
                         <p>Hard Workers</p>
                      </div>
                   </div>
@@ -1015,6 +1015,94 @@
         offset: 150,
         duration: 800,
       });
+   </script>
+
+<script>
+   var count = 0;
+   var speed = 0;
+   timer();
+   
+   function timer() {
+     count++;
+   
+     //Do code for showing the number of seconds here
+     document.getElementById("counter-1").innerHTML = count; // watch for      spelling
+   
+     if (count >= 232) {
+       return;
+     }
+   
+     speed = speed + count * 0; // or whatever
+     setTimeout(timer, speed);
+   
+   }
+   
+   </script>
+   
+   <script>
+   var count1 = 0;
+   var speed1 = 0;
+   timer1();
+   
+   function timer1() {
+     count1++;
+   
+     //Do code for showing the number of seconds here
+     document.getElementById("counter-2").innerHTML = count1; // watch for      spelling
+   
+     if (count1 >= 521) {
+       return;
+     }
+   
+     speed1 = speed1 + count1 * 0; // or whatever
+     setTimeout(timer1, speed1);
+   
+   }
+   
+   </script>
+   
+   <script>
+   var count2 = 0;
+   var speed2 = 0;
+   timer2();
+   
+   function timer2() {
+     count2++;
+   
+     //Do code for showing the number of seconds here
+     document.getElementById("counter-3").innerHTML = count2; // watch for      spelling
+   
+     if (count2 >= 1463) {
+       return;
+     }
+   
+     speed2 = speed2 + count2 * 0; // or whatever
+     setTimeout(timer2, speed2);
+   
+   }
+   
+   </script>
+   
+   <script>
+   var count3 = 0;
+   var speed3 = 0;
+   timer3();
+   
+   function timer3() {
+     count3++;
+   
+     //Do code for showing the number of seconds here
+     document.getElementById("counter-4").innerHTML = count3; // watch for      spelling
+   
+     if (count3 >= 15) {
+       return;
+     }
+   
+     speed3 = speed3 + count3 * 9; // or whatever
+     setTimeout(timer3, speed3);
+   
+   }
+   
    </script>
    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
 </html>
